@@ -1,0 +1,4 @@
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+RewriteCond %{HTTP_HOST} ^(www\.)?paar\.in
+RewriteRule ^(.*)$ https://www.paar.in/$1 [R,L]
